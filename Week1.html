@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        font-size: 30px;
+        color: #3e8e41;
+    }
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    input[type="text"], input[type="email"], select {
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #3e8e41;
+    }
+    textarea{
+        width: 80%;
+    }
+</style>
+<body>
+    <h1>Herald College Kathmandu Survey Form</h1>
+    <form>
+       <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+            
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+            
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+
+		<br><label for="description">Which option best describes you?</label>
+		<select id="description" name="description" required>
+		<option value="">Choose an option</option>
+		<option value="Student">Student</option>
+		<option value="Professional">Professional</option>
+		<option value="Entrepreneur">Entrepreneur</option>
+		<option value="Other">Other</option>
+		</select>
+
+        <br>
+        <label>Would you recommend Herald College Kathmandu to a friend?</label>
+		<input type="radio" id="yes" name="choice" value="yes">
+		<label for="yes">Yes</label>
+		<input type="radio" id="no" name="choice" value="no">
+		<label for="no">No</label>
+		<input type="radio" id="maybe" name="choice" value="maybe">
+		<label for="maybe">Maybe</label>
+
+        <br>
+        <label>Language and Frameworks Known (Check all that apply)</label>
+		<input type="checkbox" id="c" name="choice" value="c">
+		<label for="c">C</label>
+		<input type="checkbox" id="c++" name="choice" value="c++">
+		<label for="c">C++</label>
+		<input type="checkbox" id="c#" name="choice" value="c#">
+		<label for="c#">C#</label>
+        <input type="checkbox" id="java" name="choice" value="java">
+		<label for="java">Java</label>
+        <input type="checkbox" id="python" name="choice" value="python">
+		<label for="python">Python</label>
+        <input type="checkbox" id="javaScript" name="choice" value="javaScript">
+		<label for="javaScript">JavaScript</label>
+        <input type="checkbox" id="react" name="choice" value="react">
+		<label for="react">React</label>
+        <input type="checkbox" id="angular" name="choice" value="angular">
+		<label for="angular">Angular</label>
+        <input type="checkbox" id="django" name="choice" value="django">
+		<label for="django">Django</label>
+        <input type="checkbox" id="spring" name="choice" value="spring">
+		<label for="spring">Spring</label>
+
+        <p>Any comments or suggestion</p>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
+        <input type="submit">
+	</form>
+</body>
+</html>
+
+	

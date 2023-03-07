@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Page</title>
+</head>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<style>
+	img{
+		width: 100px;
+		height: 50px;
+	}
+	/* Style for the navigation menu */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 60%;
+	overflow: hidden;
+  }
+  
+  li {
+	float: left;
+	font-size: 25px;
+  }
+  
+  li a {
+	display: block;
+	text-align: center;
+	padding: 22px 28px;
+	text-decoration: none;
+  }
+  
+  li a:hover {
+	background-color: tomato;
+  }
+
+  /* Style for the search box and icon */
+.search {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 20px;
+  }
+  
+  .search input[type="text"] {
+	width: 200px;
+	padding: 10px;
+	border: 2px solid;
+	border-radius: 20px;
+  }
+  
+  .search i {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	font-size: 10px;
+  }
+
+  /* Style for the heading */
+h1 {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 30px;
+	color: white;
+  }
+  
+  /* Style for the paragraph and span */
+  p {
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: center;
+	color: white;
+  }
+
+  /* Style for the button */
+.my-button {
+	padding: 10px 18px;
+	font-size: 16px;
+	margin: 10px;
+	margin-left: 50%;
+  }
+
+  /*About */
+  #about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-1{
+    flex-basis: 35%;
+}
+.about-1 img{
+    margin-left: 50px;
+    height: 350px;
+	width: 500px;
+}
+.about-2{
+    flex-basis: 60%;
+    margin-left: 30px;
+}
+.sub-title{
+    font-size: 60px;
+    color: #759775;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+/*Services*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #e40606;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services list div:hover{
+    background: #ff0047;
+	color: #e40606;
+    transform: translateY(-10PX);
+}
+  /* Hover effect */
+  .my-button:hover {
+	background-color: #3e8e41;
+  }
+  
+  span {
+	font-weight: bold;
+	color: red;
+	text-decoration: underline;
+  }
+
+  /* Style for the form container */
+form {
+	max-width: 600px;
+	margin: 0 auto;
+	color: white;
+  }
+  
+  /* Style for the form heading */
+  h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: white;
+  }
+  
+  /* Style for the form labels */
+  label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+  }
+  
+  /* Style for the form inputs */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	width: 100%;
+  }
+  
+  /* Style for the form submit button */
+  input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 20px;
+  }
+  
+  /* Style for the form submit button on hover */
+  input[type="submit"]:hover {
+	background-color: #3e8e41;
+  }
+
+  /* Style for the footer container */
+footer {
+	color: green ;
+	padding: 20px;
+  }
+  
+  /* Style for the social media icons */
+  .social-media-icons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+  }
+  
+  .social-media-icons a {
+	font-size: 20px;
+	margin: 0 10px;
+  }
+  
+  /* Style for the footer links */
+  .footer-links {
+	display: flex;
+	justify-content: center;
+	padding: 22px 28px;
+  }
+  
+  .footer-links a {
+	color: tomato;
+	margin: 0 10px;
+  }
+  
+  /* Style for the copyright text */
+  footer p {
+	font-size: 14px;
+	text-align: center;
+  }
+  
+  body {
+	background-image: url("https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg");
+	background-size: cover;
+  }
+  
+</style>
+<body>
+	 <!-- Logo -->
+	 <img src="logo.png" alt="Logo">
+
+	 <!-- Navigation Menu -->
+	 <ul>
+		<li><a href="home">Home</a></li>
+		<li><a href="about">About</a></li>
+		<li><a href="service">Service</a></li>
+		<li><a href="contact">Contact</a></li>
+	  </ul>
+	  
+  <!-- Search Box and Icon -->
+  <div class="search">
+    <input type="text" placeholder="Search...">
+    <i class="fa fa-search"></i>
+  </div>
+
+  <!-- Heading Text -->
+  <h1>Hello There!!</h1>
+
+  <!-- Paragraph and Span -->
+  <p>This is my <span>portfolio website</span></p>
+
+
+   <!-- Navigation Menu -->
+   <ul>
+	<li><a href="home">Home</a></li>
+	<li><a href="about">About</a></li>
+	<li><a href="service">Service</a></li>
+	<li><a href="contact">Contact</a></li>
+  </ul>
+  <!---About-->
+  <section class="Red">
+	<div id = "about">
+		<div class = "row">
+			<div class = "about-1">
+				<img src="image.jpg">
+			</div>
+			<div class ="about-2">
+				<h1 class="sub-title">About Me</h1>
+				<p> ''I am currently an undergraduate student at Herald College Kathmandu.<br>
+					I am studying BSC (Hons) Computer Science program.<br>
+					 I am a self motivated, hardworking, disciplined, Quick learner.''</p> 
+					 <button class="my-button">Click me</button>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	 <!-- Navigation Menu -->
+	 <ul>
+		<li><a href="home">Home</a></li>
+		<li><a href="about">About</a></li>
+		<li><a href="service">Service</a></li>
+		<li><a href="contact">Contact</a></li>
+	  </ul>
+<!-----------services--------------->
+	<section class="blue">
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+	 <!-- Navigation Menu -->
+	 <ul>
+		<li><a href="home">Home</a></li>
+		<li><a href="about">About</a></li>
+		<li><a href="service">Service</a></li>
+		<li><a href="contact">Contact</a></li>
+	  </ul>	
+    <!-- Form -->
+	<form>
+		<h2>Contact Us</h2>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+		<label for="message">Message</label>
+		<textarea id="message" name="message" required></textarea>
+		<input type="submit" value="Submit">
+	  </form>	
+	  <div class="social-media-icons">
+		<a href="https://www.facebook.com/profile.php?id=100080837319458"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.instagram.com/imsanjeev___/"><i class="fa fa-instagram"></i></a>
+		<a href="inkedin.com/in/sanjeev-rauniyar-609822218"><i class="fa fa-linkedlin"></i></a>
+	  </div>  
+	  <footer>
+		<div class="footer-links">
+		  <a href="home">Home</a>
+		  <a href="about">About Us</a>
+		  <a href="service">Services</a>
+		  <a href="contact">Contact Us</a>
+		</div>
+		<p>&copy; Sanjeev Sah. Copyright 2023</p>
+	  </footer>	  
+</body>
+</html>
